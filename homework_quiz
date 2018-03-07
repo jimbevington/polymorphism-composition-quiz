@@ -1,0 +1,46 @@
+
+1.
+
+Polymorphism refers to the ability of something to possess multiple forms simultaneously. For instance, a person may be a Communist, a motorcyclist and a pedant. These characteristics may produce different behaviours, but they are entirely independent of one another.
+
+2.
+
+In OOP, polymorphism describes the ability of an Object to be of different Types, thereby taking on their characteristics (attributes) and behaviours (methods).
+
+For example, an instance of Juggler class could inherit from the superclass CircusFreak, while implementing Interfaces such as Performable or IBall. The Juggler would therefore possess the attributes defined both within itself and its parent class, while having access to methods defined within itself, its parent and the 2 Interfaces it implements.
+
+A Juggler IS A CircusPerformer, WHO CAN perform and use a ball.
+
+3.
+
+Polymorphism can be implemented using class inheritance, interfaces or composition.
+
+4.
+
+In theory, an object is not limited to a specified number of forms. However, while a class can implement multiple Interfaces, it can only inherit from a single parent class (although this parent may inherit from another parent class).
+
+5.
+
+Polymorphism could be used with multiple classes that share attributes or behaviours. Classes possessing the same attributes and carrying out exactly the same tasks could inherit from a common parent class. Classes that are different but carry out similar tasks in different ways are best linked using an Interface.
+
+For example, in a model of an entertainment shop - like HMV - different musical objects - Vinyls, CDs, etc - might share attributes like 'artistName' or 'yearOfRelease', and could therefore be subclasses of a parent Music class.
+
+While such objects might require a PLAY method, so would other non-musical objects - such as Games or DVDs. Thus, all these classes could implement a shared 'Playable' interface containing a PLAY method.
+
+6.
+
+In OOP, composition describes the use of Objects within other Objects, i.e ObjectA has an attribute that is a collection of ObjectB instances.
+
+7.
+
+When modelling a musical database, you might use different classes such as Albums, Artists and Songs. None of these classes is ever an instance of another, i.e an Album as is never an Artist; a Song is never an Album. However, they relate in that an Album HAS Songs, and an Artist HAS Albums.
+
+Thus, an Artist might have a 'discography' attribute containing an ArrayList of Album objects, which themselves might possess a 'songs' attribute containing an ArrayList of Songs.
+
+8.
+
+Composition allows more flexible programming as objects can gain access to the behaviour of other objects without the need to create a potentially inappropriate inheritance relationship between them. It also allows individual classes to be modified at a later date without necessarily requiring changes to a selection of child-classes.
+
+9.
+
+One benefit of composition is that when an Object containing other Objects is destroyed, the behaviours of the contained Objects are also destroyed, preventing them from being inadvertently invoked.
